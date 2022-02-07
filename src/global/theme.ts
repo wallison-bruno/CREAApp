@@ -3,6 +3,7 @@ export const theme = {
         primary: '#2E4494',
 
         secondary10: '#4E73FA',
+        secondary20: '#26387A',
 
         //cor da label
         labelgray: '#B0B0B0',

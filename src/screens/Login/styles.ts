@@ -17,5 +17,8 @@ export const styles = StyleSheet.create({
   checkbox:{
     alignItems: 'center',
     justifyContent: 'center'
+  },
+  eye:{
+      
   }
 });
