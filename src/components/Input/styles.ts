@@ -4,8 +4,6 @@ import { theme } from '../../global/theme';
 export const styles = StyleSheet.create({
   container: {
     marginBottom: 16,
-    justifyContent: 'center',
-    alignItems: 'center',
   },
   input:{
     width: 302,

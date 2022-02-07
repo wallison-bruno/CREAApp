@@ -11,6 +11,11 @@ export const styles = StyleSheet.create({
      paddingVertical: 70,
   },
   content:{
-      
+      alignItems: 'center',
+      justifyContent: 'center',
+  },
+  checkbox:{
+    alignItems: 'center',
+    justifyContent: 'center'
   }
 });
