@@ -12,8 +12,9 @@ export const styles = StyleSheet.create({
   },
   label:{
     fontSize: 14,
-    color: theme.colors.textwhite,
-    paddingLeft: 10
+    color: theme.colors.highlight,
+    paddingLeft: 10,
+    fontFamily: theme.fonts.Regular400
   },
   checkbox:{
     justifyContent: 'center',

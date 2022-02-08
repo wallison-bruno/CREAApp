@@ -6,9 +6,14 @@ export const theme = {
         secondary20: '#26387A',
 
         //cor da label
-        labelgray: '#B0B0B0',
+        highgray: '#B0B0B0',
         alertred: '#F11D1D',
-        textwhite: '#FFFFFF'
+        highlight: '#FFFFFF'
         
+    },
+    fonts:{
+        Bold700: 'Montserrat_700Bold',
+        Regular400: 'Montserrat_400Regular',
+        Medium500: 'Montserrat_500Medium',
     }
 }

@@ -15,7 +15,7 @@ export function Check(){
                     style={styles.checkbox}
                     value={check1}
                     onValueChange={setCheck1}
-                    color={check1 ? theme.colors.labelgray : undefined}
+                    color={check1 ? theme.colors.highgray : undefined}
                                  
                 />
                 <Text style={styles.label}>Lembrar senha</Text> 

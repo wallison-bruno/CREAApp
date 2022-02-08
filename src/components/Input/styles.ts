@@ -9,12 +9,13 @@ export const styles = StyleSheet.create({
     width: 302,
     height: 56,
     borderWidth: 2,
-    borderColor: theme.colors.secondary10,
     borderRadius: 4,
+    borderColor: theme.colors.secondary10,
+    color: theme.colors.highgray,
     backgroundColor: theme.colors.primary,
-    paddingLeft: 16,
+    fontFamily: theme.fonts.Regular400,
     fontSize: 16,
+    paddingLeft: 16,
     elevation: 3,
-    color: theme.colors.labelgray
   }
 });

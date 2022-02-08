@@ -1,32 +1,20 @@
 import React from 'react';
-import { View, Image, Text
- } from 'react-native';
-
-import { RectButton, RectButtonProps } from 'react-native-gesture-handler';
-
-import { Ionicons } from '@expo/vector-icons';
-import { styles } from './styles';
-import Logo from '../../assets/logo.png'
+import { View, Image, ScrollView, Text} from 'react-native';
+ 
 import { Input } from '../../components/Input';
 import { Check } from '../../components/CheckBox';
-import { theme } from '../../global/theme';
+
+import { styles } from './styles';
+
+import Logo from '../../assets/logo.png'
+import Public from '../../assets/public.png'
+import { ButtonEnter } from '../../components/ButtonEnter';
+
 
 
 export function Login(){
-
-  const ButtonEye = () => (
-      <RectButton activeOpacity={0.5} >
-          <Ionicons 
-            style={styles.eye}
-            name='eye' 
-            size={24} 
-            color={theme.colors.secondary20}
-          />
-      </RectButton> 
-  );
-
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container} >
 
           <View style={styles.logo}>
               <Image 
@@ -34,17 +22,29 @@ export function Login(){
               />
           </View>
           
-          <View style={styles.content}>
+          <View style={styles.content} >
               <Input title='CPF'/>
               <Input title='Senha'/>
-              <ButtonEye/> 
+              <Check />
           </View> 
 
-          <View style={styles.checkbox}>
-            <Check />
+          <View style={styles.recoverPassword}>
+            <Text style={styles.titleRecover}>Esqueceu a senha?</Text>
+
+            {/* Aqui é um link */}
+            <Text style={styles.linkRecover}>Clique Aqui</Text>
+          </View>
+
+          <View style={styles.button}>
+            <ButtonEnter title='Entrar'/>
+          </View>
+          
+          {/* Aqui é um link */}
+          <View style={styles.public}>
+              <Image source={Public} style={styles.imagePublic}/>
+              <Text style={styles.titlePublic}>Ambiente público</Text>
           </View>
         
-
-    </View>
+    </ScrollView>
   );
 }
