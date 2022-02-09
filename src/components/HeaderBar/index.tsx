@@ -11,10 +11,10 @@ import { theme } from '../../global/theme';
 import { styles } from './styles';
 
 type Props = RectButtonProps & {
-  text: string;
+  title: string;
 }
 
-export function HeaderBar({text, ...rest} : Props){
+export function HeaderBar({title, ...rest} : Props){
     const { primary, secondary30 } = theme.colors;
 
   return (
@@ -35,7 +35,7 @@ export function HeaderBar({text, ...rest} : Props){
             />
         </RectButton>
 
-            <Text style={styles.title}> {text} </Text>  
+            <Text style={styles.title}> {title} </Text>  
 
     </LinearGradient>
   );

@@ -13,7 +13,7 @@ export function Consultas(){
             />
             
             <View>
-                <HeaderBar text="Consultas" />
+                <HeaderBar title="Consultas" />
             </View>
 
             <View style={styles.navigation}>            

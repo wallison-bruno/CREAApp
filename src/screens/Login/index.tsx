@@ -15,7 +15,7 @@ import { ButtonEnter } from '../../components/ButtonEnter';
 
 export function Login(){
   return (
-    <ScrollView style={styles.container} >
+    <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
 
           <StatusBar
             barStyle='light-content'
