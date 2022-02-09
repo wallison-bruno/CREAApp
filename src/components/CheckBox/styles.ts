@@ -12,7 +12,7 @@ export const styles = StyleSheet.create({
   },
   label:{
     fontSize: 14,
-    color: theme.colors.highlight,
+    color: theme.colors.milk,
     paddingLeft: 10,
     fontFamily: theme.fonts.Regular400
   },

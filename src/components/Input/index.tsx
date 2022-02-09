@@ -16,7 +16,7 @@ export function Input({title, ...rest} : Props){
                 style={styles.input}
                 placeholder={title}
                 placeholderTextColor={theme.colors.highgray}
-                selectionColor={theme.colors.highlight}
+                selectionColor={theme.colors.milk}
                 {...rest}
             />
 

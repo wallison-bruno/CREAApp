@@ -24,14 +24,14 @@ export const styles = StyleSheet.create({
   },
   titleRecover: {
     fontSize: 14,
-    color: theme.colors.highlight,
+    color: theme.colors.milk,
     paddingHorizontal: 4,
     fontFamily: theme.fonts.Regular400
   },
   linkRecover:{
     fontSize:14,
     fontWeight: 'bold',
-    color: theme.colors.highlight,
+    color: theme.colors.milk,
     fontFamily: theme.fonts.Regular400
   },
   button:{
@@ -52,7 +52,7 @@ export const styles = StyleSheet.create({
   titlePublic: {
     fontSize: 14,
     // fontWeight: 'medium',
-    color: theme.colors.highlight,
+    color: theme.colors.milk,
     fontWeight: 'bold',
     fontFamily: theme.fonts.Regular400
   }
