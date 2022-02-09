@@ -11,6 +11,7 @@ import {
 import AppLoading from 'expo-app-loading';
 
 import { Login } from "./src/screens/Login";
+import { Routes } from './src/routes';
 
 export default function App() {
   //o vetor vai retornar um valor boolean
@@ -31,7 +32,7 @@ export default function App() {
           style='light' 
           translucent
         />
-        <Login />
+        <Routes />
     </>
      
   );

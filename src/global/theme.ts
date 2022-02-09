@@ -4,6 +4,7 @@ export const theme = {
 
         secondary10: '#4E73FA',
         secondary20: '#26387A',
+        secondary30: '#2942E1',
 
         //cor da label
         highgray: '#B0B0B0',
