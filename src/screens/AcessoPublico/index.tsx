@@ -6,8 +6,14 @@ import { HeaderBar } from '../../components/HeaderBar';
 
 import { styles } from './styles';
 
-import iconNext from '../../assets/iconNext.png'
 import { NewsTitle } from '../../components/NewsTitle';
+import { NewsBar } from '../../components/NewsBar';
+import { theme } from '../../global/theme';
+import { ButtonIcon } from '../../components/ButtonIcon';
+
+import Alert from '../../assets/alert.png'
+import Arrow from '../../assets/rightarrow.png'
+
  
 export function AcessoPublico(){
   return (
@@ -25,7 +31,7 @@ export function AcessoPublico(){
 
         <ScrollView 
             horizontal
-            style={styles.newstitle}  
+            style={styles.newsTitle}  
             showsHorizontalScrollIndicator={false}  
             contentContainerStyle={{ paddingRight: 10 }}
         >
@@ -34,16 +40,24 @@ export function AcessoPublico(){
             <NewsTitle title='Lorem ipsum dolor sit amet, consecte adipiscing elit.'/>
             <NewsTitle title='Lorem ipsum dolor sit amet, consecte adipiscing elit.'/>
             <NewsTitle title='Lorem ipsum dolor sit amet, consecte adipiscing elit.'/>
-            <NewsTitle title='Lorem ipsum dolor sit amet, consecte adipiscing elit.'/>
-            <NewsTitle title='Lorem ipsum dolor sit amet, consecte adipiscing elit.'/>
-            
-        </ScrollView>      
 
-        {/* Faltando os icones de bolinhas que rola quando passa imagem */}
-        <View style={styles.plus}>
-            <Text style={styles.titlePlus}>Ver mais</Text>
-            <Image style={styles.imgPlus} source={iconNext} />
+        </ScrollView>    
+        
+        <View style={styles.newsCircle}>
+            <NewsBar />  
         </View>
+
+          <View style={styles.viewButton}>
+          <ButtonIcon 
+                    style={styles.buttonOne} 
+                    color= {theme.colors.milk} 
+                    title="Nova denúncia"
+                    fontSize={14}
+                    fontFamily={theme.fonts.SemiBold600}
+                    iconOne={Alert}
+                    iconTwo={undefined}
+                />
+          </View>
         
 
     </View>

@@ -1,20 +1,29 @@
 import React from 'react';
 import { View, Text } from 'react-native';
+import { color } from 'react-native-elements/dist/helpers';
 import { RectButton, RectButtonProps } from 'react-native-gesture-handler';
 
 import { styles } from './styles';
 
 type Props = RectButtonProps & {
     title: string;
+    color: string;
+    fontSize: number;
+    fontFamily: string;
 }
 
-export function ButtonEnter({title, ...rest}: Props){
+export function ButtonEnter({title, color, fontSize, fontFamily, ...rest}: Props){
   return (
     <RectButton 
         style={styles.container}
         {...rest} 
     >  
-            <Text style={styles.title}>{title}</Text>
+            <Text style={[
+                // styles.title, 
+                {color: color}, 
+                {fontSize: fontSize},
+                {fontFamily: fontFamily}
+            ]}>{title}</Text>
     </RectButton>
   );
 }

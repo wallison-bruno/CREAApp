@@ -1,5 +1,4 @@
 import { StyleSheet } from 'react-native';
-import { theme } from '../../global/theme';
 
 export const styles = StyleSheet.create({
   container: {
@@ -7,4 +6,15 @@ export const styles = StyleSheet.create({
     height:'100%',
     borderRadius: 4,
   },
+  viewIcon:{
+    flexDirection: 'row',
+  },
+  iconOne:{
+    marginLeft: 19,
+    marginRight:27
+  }, 
+  iconTwo:{
+    marginTop: 4,
+    marginLeft: 100
+  }
 });

@@ -5,7 +5,7 @@ export const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: theme.colors.primary,
-    paddingTop: 80
+    paddingTop: 80,
   },
   logo:{
      alignItems: 'center',
@@ -34,9 +34,19 @@ export const styles = StyleSheet.create({
     color: theme.colors.milk,
     fontFamily: theme.fonts.Regular400
   },
-  button:{
-     alignItems: 'center',
-     marginTop: 25,
+  viewButton:{
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  buttonOne:{
+    backgroundColor: theme.colors.secondary20,
+    justifyContent: 'center',
+    alignItems: 'center',
+    width:302,
+    height: 56,
+    borderRadius: 4,
+    marginTop: 25,
+    elevation: 3,
   },
   public:{
     alignItems: 'center',

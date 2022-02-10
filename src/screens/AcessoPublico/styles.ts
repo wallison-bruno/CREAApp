@@ -3,8 +3,7 @@ import { theme } from '../../global/theme';
 
 export const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    justifyContent: 'center',
+    justifyContent: 'center'
   },
   title:{
       fontSize: 16,
@@ -13,23 +12,23 @@ export const styles = StyleSheet.create({
       marginLeft: 14,
       marginBottom: 8
   },
-  newstitle:{
+  newsTitle:{
      marginLeft: 14
   },
-  plus:{
-    marginBottom: 470,
-    flexDirection: 'row',
-    alignItems: 'center',
-    paddingLeft: 300
-}, 
-  titlePlus:{
-    fontSize: 14,
-    marginBottom: 2,
-    fontFamily: theme.fonts.SemiBold600,
+  newsCircle:{
+      paddingBottom: 10
   },
-  imgPlus:{
-    marginLeft: 8,
-    width: 6,
-    height: 10,
+  viewButton:{
+    alignItems: 'center',
+  },
+  buttonOne:{
+    backgroundColor: theme.colors.alertred,
+    width:340,
+    height: 56,
+    borderRadius: 4,
+    marginTop: 8,
+    elevation: 3,
+    justifyContent: 'center'    
   }
+  
 });

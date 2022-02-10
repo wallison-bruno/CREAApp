@@ -3,17 +3,20 @@ import { theme } from '../../global/theme';
 
 export const styles = StyleSheet.create({
   container: {
-    maxWidth:310,
-    maxHeight: 145,
-    borderRadius: 4,
+    width: 302,
+    height: 145,
     marginTop: 8,
-    marginRight: 18,
-    elevation: 1,
+    marginRight: 13,
+    marginLeft: 5,
+    elevation: 2,
     justifyContent: 'flex-end',
   },
   titleBackground:{
     backgroundColor: 'black',
-    opacity: 0.70
+    opacity: 0.70,
+    width: 302,
+    height: 70,
+    borderRadius: 5
   },
   title:{
     fontSize: 14,
@@ -27,5 +30,8 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
     textAlign: 'center',
     ...StyleSheet.absoluteFillObject,
+    width: 302,
+    height: 145,
+    borderRadius: 5
   }
 });

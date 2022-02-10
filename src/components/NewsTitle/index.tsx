@@ -4,8 +4,6 @@ import { RectButton, RectButtonProps } from 'react-native-gesture-handler';
 
 import { styles } from './styles';
 
-
-
 type Props = RectButtonProps & {
     title: string;
 }
@@ -23,10 +21,6 @@ export function NewsTitle({title, ...rest}: Props){
       <View style={styles.titleBackground}>
         <Text style={styles.title}>{title}</Text>   
       </View>
-
-
-       
-        
                     
     </RectButton>
   );

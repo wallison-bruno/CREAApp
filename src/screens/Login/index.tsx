@@ -10,6 +10,7 @@ import { styles } from './styles';
 import Logo from '../../assets/logo.png'
 import Public from '../../assets/public.png'
 import { ButtonEnter } from '../../components/ButtonEnter';
+import { theme } from '../../global/theme';
 
 
 
@@ -42,8 +43,8 @@ export function Login(){
             <Text style={styles.linkRecover}>Clique Aqui</Text>
           </View>
 
-          <View style={styles.button}>
-            <ButtonEnter title='Entrar'/>
+          <View style={styles.viewButton}>
+            <ButtonEnter style={styles.buttonOne} title='Entrar' color={theme.colors.primary} fontSize={15} fontFamily={theme.fonts.Bold700}/>
           </View>
           
           {/* Aqui é um link */}
