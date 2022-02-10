@@ -12,7 +12,7 @@ export const styles = StyleSheet.create({
       marginLeft: 14,
       marginBottom: 8
   },
-  newsTitle:{
+  content:{
      marginLeft: 14
   },
   newsCircle:{
@@ -37,7 +37,6 @@ export const styles = StyleSheet.create({
     borderRadius: 4,
     marginTop: 8,
     elevation: 3,
-    justifyContent: 'center'    
+    justifyContent: 'center'   
   }
-  
 });

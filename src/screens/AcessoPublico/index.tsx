@@ -30,9 +30,10 @@ export function AcessoPublico(){
             Novidades
         </Text>
 
+        {/* CABEI AQUI */}
         <ScrollView 
             horizontal
-            style={styles.newsTitle}  
+            style={styles.content}  
             showsHorizontalScrollIndicator={false}  
             contentContainerStyle={{ paddingRight: 10 }}
         >
@@ -67,11 +68,37 @@ export function AcessoPublico(){
                 iconOne={Search}
                 iconTwo={Arrow}
           />
+          <ButtonIcon 
+                style={styles.buttonOne} 
+                color= {theme.colors.darkgray} 
+                title="Estatísticas"
+                fontSize={14}
+                fontFamily={theme.fonts.SemiBold600}
+                iconOne={Search}
+                iconTwo={Arrow}
+          />
+          <ButtonIcon 
+                style={styles.buttonOne} 
+                color= {theme.colors.darkgray} 
+                title="Autenticar carteira"
+                fontSize={14}
+                fontFamily={theme.fonts.SemiBold600}
+                iconOne={Search}
+                iconTwo={Arrow}
+          />
+          <ButtonIcon 
+                style={styles.buttonOne} 
+                color= {theme.colors.darkgray} 
+                title="Conselheiros"
+                fontSize={14}
+                fontFamily={theme.fonts.SemiBold600}
+                iconOne={Search}
+                iconTwo={Arrow}
+          />
           
 
           </View>
         
-
     </View>
   );
 }

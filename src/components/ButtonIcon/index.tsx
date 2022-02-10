@@ -27,15 +27,25 @@ export function ButtonIcon({
         style={styles.container}
         {...rest} 
     >         
-            <View style={styles.viewIcon}>
-              <Image style={[styles.iconOne]} source={iconOne}/>
-                <Text style={[
-                  // styles.title, 
-                  {color: color}, 
-                  {fontSize: fontSize},
-                  {fontFamily: fontFamily}
-                ]}>{title}</Text>
-                <Image style={styles.iconTwo} source={iconTwo}/>
+            <View style={styles.content}>
+
+              <View style={styles.viewIconOne}>
+                <Image style={[styles.iconOne]} source={iconOne}/>
+              </View>
+
+                  <View style={styles.viewTitle}>
+                    <Text style={[
+                        styles.title, 
+                        {color: color}, 
+                        {fontSize: fontSize},
+                        {fontFamily: fontFamily}
+                      ]}>{title}</Text>
+                  </View>
+
+                <View style={styles.ViewIconTwo}>
+                  <Image style={[styles.iconTwo]} source={iconTwo} />
+                </View>
+
             </View>
     </RectButton>
   );
