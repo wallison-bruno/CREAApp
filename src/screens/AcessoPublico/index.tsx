@@ -13,6 +13,7 @@ import { ButtonIcon } from '../../components/ButtonIcon';
 
 import Alert from '../../assets/alert.png'
 import Arrow from '../../assets/rightarrow.png'
+import Search from '../../assets/search.png'
 
  
 export function AcessoPublico(){
@@ -49,14 +50,25 @@ export function AcessoPublico(){
 
           <View style={styles.viewButton}>
           <ButtonIcon 
-                    style={styles.buttonOne} 
-                    color= {theme.colors.milk} 
-                    title="Nova denúncia"
-                    fontSize={14}
-                    fontFamily={theme.fonts.SemiBold600}
-                    iconOne={Alert}
-                    iconTwo={undefined}
-                />
+                style={styles.buttonAlert} 
+                color= {theme.colors.milk} 
+                title="Nova denúncia"
+                fontSize={14}
+                fontFamily={theme.fonts.SemiBold600}
+                iconOne={Alert}
+                iconTwo={undefined}
+          />
+          <ButtonIcon 
+                style={styles.buttonOne} 
+                color= {theme.colors.darkgray} 
+                title="Consultas"
+                fontSize={14}
+                fontFamily={theme.fonts.SemiBold600}
+                iconOne={Search}
+                iconTwo={Arrow}
+          />
+          
+
           </View>
         
 

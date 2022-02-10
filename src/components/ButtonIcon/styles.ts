@@ -15,6 +15,6 @@ export const styles = StyleSheet.create({
   }, 
   iconTwo:{
     marginTop: 4,
-    marginLeft: 100
+    marginLeft: 180
   }
 });
