@@ -4,19 +4,20 @@ import { RectButton, RectButtonProps } from 'react-native-gesture-handler';
 
 import { styles } from './styles';
 
+
+
 type Props = RectButtonProps & {
     title: string;
+    image: any;
 }
 
-export function NewsTitle({title, ...rest}: Props){
+export function NewsTitle({title, image, ...rest}: Props){
   return (
     <RectButton 
         style={styles.container}
         {...rest} 
     >        
-        {/* Faltando a imagem   */}
-        
-      <Image style={styles.img} source={require("../../assets/news.png")}/>
+      <Image style={styles.img} source={image}/>
       
       <View style={styles.titleBackground}>
         <Text style={styles.title}>{title}</Text>   
