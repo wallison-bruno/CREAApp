@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, StatusBar } from 'react-native';
 
 import { LinearGradient } from 'expo-linear-gradient';
 import { Ionicons } from '@expo/vector-icons';
@@ -25,6 +25,11 @@ export function HeaderBar({title, ...rest} : Props){
     style={styles.container} 
     colors={[primary, secondary30]}
     >
+      <StatusBar
+          barStyle='light-content'
+          backgroundColor= 'black'
+      />
+      
         {/* Esse é o botão com Icon */}
         <RectButton style={styles.iconWrapper} {...rest} >
             <Ionicons 

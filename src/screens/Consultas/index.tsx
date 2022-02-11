@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, StatusBar} from 'react-native';
+import { View } from 'react-native';
 import { ButtonEnter } from "../../components/ButtonEnter";
 import { HeaderBar } from "../../components/HeaderBar";
 import { theme } from "../../global/theme";
@@ -7,16 +7,10 @@ import { styles } from "./styles";
 
 export function Consultas(){
     return(
-        <View style={styles.container}>
-            <StatusBar
-                barStyle='light-content'
-                backgroundColor= 'black'
-            />
-            
-            <View>
+        <View style={styles.container}> 
+                    
                 <HeaderBar title="Consultas" />
-            </View>
-
+            
             <View style={styles.navigation}>            
                 <ButtonEnter 
                     style={styles.buttonOne} 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { TextInput, TextInputProps, View, ScrollView } from 'react-native';
+import { TextInput, TextInputProps, View} from 'react-native';
 import { theme } from '../../global/theme';
 
 import { styles } from './styles';
@@ -10,8 +10,7 @@ type Props = TextInputProps & {
 
 export function Input({title, ...rest} : Props){
   return (
-    
-        <ScrollView style={styles.container} keyboardDismissMode='interactive'>
+        <View style={styles.container}>
             <TextInput 
                 style={styles.input}
                 placeholder={title}
@@ -19,8 +18,6 @@ export function Input({title, ...rest} : Props){
                 selectionColor={theme.colors.milk}
                 {...rest}
             />
-
-        </ScrollView>
-    
+        </View>
   );
 }

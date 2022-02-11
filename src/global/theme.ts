@@ -8,9 +8,10 @@ export const theme = {
 
         highlight: '#F6F6F6',
         highgray: '#B0B0B0',
+        verylightgray: '#C7C7C7',
         darkgray: '#1C2030',
         alertred: '#F11D1D',
-        milk: '#FFFFFF',
+        milk: '#FFFFFF', 
         
 
         
