@@ -28,13 +28,19 @@ export function Denuncia(){
                 />
             </View>
               <InputText
-                style={styles.input}
-                title='CPF'
+                title='CPF:'
                 textAlign='left'
               />
-                <InputText
-                style={styles.input}
-                title='Nome Completo'
+              <InputText
+                title='Nome Completo:'
+                textAlign='left'
+              />
+              <InputText
+                title='E-mail:'
+                textAlign='left'
+              />
+              <InputText
+                title='Telefone:'
                 textAlign='left'
               />
           </View>    

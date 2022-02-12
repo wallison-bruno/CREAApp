@@ -14,7 +14,10 @@ export function InputText({title, ...rest} : Props){
         <Text style={styles.title}>
               {title}
         </Text>
-        <TextInput style={styles.input} />
+        <TextInput 
+          style={styles.input}
+          {...rest} 
+        />
     </View>    
   );
 }

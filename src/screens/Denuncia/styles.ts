@@ -12,11 +12,12 @@ export const styles = StyleSheet.create({
     width: 342,
     backgroundColor: theme.colors.milk,
     paddingHorizontal: 16,
-    marginTop: 16
+    marginTop: 16,
   },
   viewTitleID:{
     flexDirection: 'row',
-    paddingTop: 16
+    marginTop: 16,
+    marginBottom: 10,
   },
   titleID:{
     color: theme.colors.primary,
@@ -24,7 +25,4 @@ export const styles = StyleSheet.create({
     fontSize: 14,
     paddingRight: 8,
   },
-  input:{
-    
-  }
 });

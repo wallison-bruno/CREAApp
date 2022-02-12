@@ -8,7 +8,7 @@ export const styles = StyleSheet.create({
   title:{
     height: 20,
     textAlign: 'left',
-    marginTop: 8,
+    paddingTop: 3,
     marginBottom: 4,
     fontSize: 10,
     color: theme.colors.darkgray,
@@ -20,7 +20,7 @@ export const styles = StyleSheet.create({
     borderWidth: 1,
     borderRadius: 4,
     borderColor: theme.colors.verylightgray,
-    marginBottom: 10,
-    
+    marginBottom: 12,
+    padding: 10
   },
 });
