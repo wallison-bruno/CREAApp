@@ -11,6 +11,7 @@ export const theme = {
         verylightgray: '#C7C7C7',
         darkgray: '#1C2030',
         alertred: '#F11D1D',
+        radiored: '#DB370C',
         milk: '#FFFFFF', 
         
 

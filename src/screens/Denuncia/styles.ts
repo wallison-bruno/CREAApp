@@ -3,11 +3,10 @@ import { theme } from '../../global/theme';
 
 export const styles = StyleSheet.create({
   container: {
-    flex: 1,
     backgroundColor: theme.colors.highlight,
     alignItems: 'center',
   },
-  content:{
+  data:{
     borderRadius: 4,
     width: 342,
     backgroundColor: theme.colors.milk,
@@ -25,4 +24,5 @@ export const styles = StyleSheet.create({
     fontSize: 14,
     paddingRight: 8,
   },
+  
 });
