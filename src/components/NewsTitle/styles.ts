@@ -28,6 +28,7 @@ export const styles = StyleSheet.create({
   },
   img:{
     justifyContent: 'center',
+    //faz o texto sobrepor
     ...StyleSheet.absoluteFillObject,
     width: 302,
     height: 145,
