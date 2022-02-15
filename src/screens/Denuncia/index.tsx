@@ -17,6 +17,7 @@ import  Mic from '../../assets/mic.png';
 import SearchRed from '../../assets/searchred.png'
 import AddImage from '../../assets/addimage.png'
 import Alert from '../../assets/alerttwo.png'
+import { Picker } from '../../components/Picker';
 
 export function Denuncia(){
   return (
@@ -89,7 +90,7 @@ export function Denuncia(){
             </View>
 
               {/* VER OUTROS TIPOS DE PICKERS */}
-            <SelectPicker title='Tipo de endereço'/>
+            <Picker title='Tipo de endereço'/>
             <SelectPicker title='Tipo de logradouro'/>
 
               <InputText
