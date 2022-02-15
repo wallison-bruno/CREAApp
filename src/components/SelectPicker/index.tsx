@@ -1,27 +1,36 @@
-import React, {useState} from 'react';
-import { View, Text} from 'react-native';
-import {Picker} from '@react-native-picker/picker';
+import React, { useState } from 'react';
+import { View, Text } from 'react-native';
+import { Picker, PickerProps } from '@react-native-picker/picker';
+
+import { categories } from '../../utils/categories';
 
 import { styles } from './styles';
 
-export function SelectPicker(){
+type Props = PickerProps &{
+  title: string;
+}
+
+export function SelectPicker({title} : Props) {
 
   const [escolaridade, setEscolaridade] = useState('');
 
   return (
     <View>
-        <Picker 
-          style={styles.pickerComponent}
-          selectedValue={escolaridade}
-          onValueChange={(itemValue, itemIndex) => setEscolaridade(itemValue)
-          }>
-          <Picker.Item label='Postal' value=''/>
-          <Picker.Item label='Online' value='Online'/> 
-          <Picker.Item label='Outros' value='Outros'/>     
-        </Picker>
-        <Text style={{fontSize: 25}}>
-          {escolaridade}
-        </Text>
+      
+      <Text style={styles.title}>{title}</Text>
+      
+      <View style={styles.viewPicker}>
+        <Picker
+        style={styles.pickerComponent}
+        selectedValue={escolaridade}
+        onValueChange={(itemValue, itemIndex) => setEscolaridade(itemValue)
+       
+        }>       
+          <Picker.Item label='Local' value='Local' />
+          <Picker.Item label='Outros' value='Outros' />
+          <Picker.Item label='Online' value='Online' />       
+      </Picker>
+      </View>
     </View>
   );
 }

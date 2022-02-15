@@ -1,4 +1,4 @@
-export const businessTypesList = [
+export const categories = [
     { value: 'CARTÓRIO', label: 'CARTÓRIO', id: 1 },
     { value: 'CASA DE SHOWS', label: 'CASA DE SHOWS', id: 2 },
     { value: 'CLÍNICA', label: 'CLÍNICA', id: 3 },

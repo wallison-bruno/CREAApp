@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { View, Text, ScrollView, Image } from 'react-native';
+import { View, Text, ScrollView } from 'react-native';
 
 import { HeaderBar } from '../../components/HeaderBar';
 
@@ -82,80 +82,80 @@ export function AcessoPublico(){
                         title="Nova denúncia"
                         fontSize={14}
                         fontFamily={theme.fonts.SemiBold600}
-                        iconOne={Alert}
-                        iconTwo={undefined}
+                        iconLeft={Alert}
+                        iconRight={undefined}
                     />
                     <ButtonIcon 
-                        style={styles.buttonOne} 
+                        style={styles.button} 
                         color= {theme.colors.darkgray} 
                         title="Consultas"
                         fontSize={14}
                         fontFamily={theme.fonts.SemiBold600}
-                        iconOne={Search}
-                        iconTwo={Arrow}
+                        iconLeft={Search}
+                        iconRight={Arrow}
                     />
                     <ButtonIcon 
-                        style={styles.buttonOne} 
+                        style={styles.button} 
                         color= {theme.colors.darkgray} 
                         title="Estatísticas"
                         fontSize={14}
                         fontFamily={theme.fonts.SemiBold600}
-                        iconOne={Statistic}
-                        iconTwo={Arrow}
+                        iconLeft={Statistic}
+                        iconRight={Arrow}
                     />
                     <ButtonIcon 
-                        style={styles.buttonOne} 
+                        style={styles.button} 
                         color= {theme.colors.darkgray} 
                         title="Autenticar carteira"
                         fontSize={14}
                         fontFamily={theme.fonts.SemiBold600}
-                        iconOne={Authenticate}
-                        iconTwo={Arrow}
+                        iconLeft={Authenticate}
+                        iconRight={Arrow}
                     />
                     <ButtonIcon 
-                        style={styles.buttonOne} 
+                        style={styles.button} 
                         color= {theme.colors.darkgray} 
                         title="Conselheiros"
                         fontSize={14}
                         fontFamily={theme.fonts.SemiBold600}
-                        iconOne={Counselors}
-                        iconTwo={Arrow}
+                        iconLeft={Counselors}
+                        iconRight={Arrow}
                     />
                     <ButtonIcon 
-                        style={styles.buttonOne} 
+                        style={styles.button} 
                         color= {theme.colors.darkgray} 
                         title="Entidades de classe"
                         fontSize={14}
                         fontFamily={theme.fonts.SemiBold600}
-                        iconOne={Entities}
-                        iconTwo={Arrow}
+                        iconLeft={Entities}
+                        iconRight={Arrow}
                     />
                     <ButtonIcon 
-                        style={styles.buttonOne} 
+                        style={styles.button} 
                         color= {theme.colors.darkgray} 
                         title="Sobre o CREA-CE"
                         fontSize={14}
                         fontFamily={theme.fonts.SemiBold600}
-                        iconOne={About}
-                        iconTwo={Arrow}
+                        iconLeft={About}
+                        iconRight={Arrow}
                     />
                     <ButtonIcon 
-                        style={styles.buttonOne} 
+                        style={styles.button} 
                         color= {theme.colors.darkgray} 
                         title="Links"
                         fontSize={14}
                         fontFamily={theme.fonts.SemiBold600}
-                        iconOne={Links}
-                        iconTwo={Arrow}
+                        iconLeft={Links}
+                        iconRight={Arrow}
                     />
                     <ButtonIcon 
-                        style={styles.buttonOne} 
+                        style={styles.button} 
                         color= {theme.colors.darkgray} 
                         title="Diretoria"
                         fontSize={14}
                         fontFamily={theme.fonts.SemiBold600}
-                        iconOne={Directors}
-                        iconTwo={Arrow}
+                        iconLeft={Directors}
+                        iconRight={Arrow}
                     />
             </View>            
         </ScrollView>        

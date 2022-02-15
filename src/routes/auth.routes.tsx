@@ -14,22 +14,22 @@ export function AuthRoutes(){
                 headerTransparent: false,
                 headerTitleAlign: 'center',
                 headerShown: false
-        }}>
-            <Screen 
-                name='Denuncia'
-                component={Denuncia}
-            />
+            }}>
+                <Screen 
+                    name='Denuncia'
+                    component={Denuncia}
+                />
             <Screen 
                 name='Login'
                 component={Login}
             />
             <Screen 
-                name='Consultas'
-                component={Consultas}
+                component={AcessoPublico}
+                name='AcessoPublico'
             />
             <Screen 
-                name='AcessoPublico'
-                component={AcessoPublico}
+                name='Consultas'
+                component={Consultas}
             />
         </Navigator>
   );

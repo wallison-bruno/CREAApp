@@ -34,7 +34,7 @@ export const styles = StyleSheet.create({
     elevation: 3,
     justifyContent: 'center'
   },
-  buttonOne:{
+  button:{
     backgroundColor: theme.colors.milk,
     width:340,
     height: 56,

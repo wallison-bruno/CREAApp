@@ -9,8 +9,8 @@ type Props = RectButtonProps & {
     color: string;
     fontSize: number;
     fontFamily: string;
-    iconOne: any;
-    iconTwo: any;
+    iconLeft: any;
+    iconRight: any;
 }
 
 export function ButtonIcon({
@@ -18,8 +18,8 @@ export function ButtonIcon({
         color, 
         fontSize, 
         fontFamily, 
-        iconOne, 
-        iconTwo, 
+        iconLeft, 
+        iconRight, 
         ...rest
     }: Props){
   return (
@@ -30,7 +30,7 @@ export function ButtonIcon({
             <View style={styles.content}>
 
               <View style={styles.viewIconOne}>
-                <Image style={[styles.iconOne]} source={iconOne}/>
+                <Image style={[styles.iconOne]} source={iconLeft}/>
               </View>
 
                   <View style={styles.viewTitle}>
@@ -43,7 +43,7 @@ export function ButtonIcon({
                   </View>
 
                 <View style={styles.ViewIconTwo}>
-                  <Image style={[styles.iconTwo]} source={iconTwo} />
+                  <Image style={[styles.iconTwo]} source={iconRight} />
                 </View>
 
             </View>
