@@ -15,10 +15,11 @@ export function AuthRoutes(){
                 headerTitleAlign: 'center',
                 headerShown: false
             }}>
-                <Screen 
-                    name='Denuncia'
-                    component={Denuncia}
-                />
+            
+            <Screen 
+                name='Denuncia'
+                component={Denuncia}
+            />
             <Screen 
                 name='Login'
                 component={Login}

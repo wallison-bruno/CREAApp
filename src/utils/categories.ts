@@ -1,1 +1,0 @@
-export const OPTIONS = ['Red', 'Blue', 'Green','Red', 'Blue', 'Green','Red', 'Blue', 'Green','Red', 'Blue', 'Green','Red', 'Blue', 'Green','Red', 'Blue', 'Green','Red', 'Blue', 'Green'];
