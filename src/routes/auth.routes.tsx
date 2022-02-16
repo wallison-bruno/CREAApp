@@ -4,6 +4,7 @@ import { Login } from '../screens/Login';
 import { AcessoPublico } from '../screens/AcessoPublico';
 import { Consultas } from '../screens/Consultas';
 import { Denuncia } from '../screens/Denuncia';
+import { AreaRestrita } from '../screens/AreaRestrita';
 
 const { Navigator, Screen } = createStackNavigator();
 
@@ -16,6 +17,10 @@ export function AuthRoutes(){
                 headerShown: false
             }}>
             
+                <Screen 
+                    name='AreaRestrita'
+                    component={AreaRestrita}
+                />
             <Screen 
                 name='Denuncia'
                 component={Denuncia}
@@ -25,13 +30,13 @@ export function AuthRoutes(){
                 component={Login}
             />
             <Screen 
-                component={AcessoPublico}
                 name='AcessoPublico'
+                component={AcessoPublico}
             />
             <Screen 
                 name='Consultas'
                 component={Consultas}
-            />
+            />   
         </Navigator>
   );
 }

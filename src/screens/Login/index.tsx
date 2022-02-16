@@ -1,7 +1,6 @@
 import React from 'react';
-import { View, Image, ScrollView, Text} from 'react-native';
+import { View, Image, ScrollView, Text, StatusBar} from 'react-native';
 
-import { StatusBar } from 'react-native';
 import { Input } from '../../components/Input';
 import { Check } from '../../components/CheckBox';
 

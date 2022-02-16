@@ -10,7 +10,6 @@ import {
 } from '@expo-google-fonts/montserrat';
 import AppLoading from 'expo-app-loading';
 
-import { Login } from "./src/screens/Login";
 import { Routes } from './src/routes';
 
 export default function App() {
