@@ -108,12 +108,10 @@ export function AreaRestrita(){
             />
           </View>
 
-            <View style={styles.menubar}>
-              <MenuBar/>
-            </View>
-            
-
         </View>
+            
+              <MenuBar/>
+            
     </View>
   );
 }

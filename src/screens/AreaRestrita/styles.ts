@@ -3,10 +3,12 @@ import { theme } from '../../global/theme';
 
 export const styles = StyleSheet.create({
   container: {
-    backgroundColor: theme.colors.highlight
+    backgroundColor: theme.colors.highlight,
+    flex: 1
   },
   content:{
-    alignItems: 'center'
+    alignItems: 'center',
+    flex: 1
   },
   viewInput: {
     width: 345,
@@ -52,9 +54,6 @@ export const styles = StyleSheet.create({
     fontSize: 14,
     paddingLeft: 5
   },
-  services:{
-    
-  },
   viewPlus:{
     alignSelf: 'flex-start',
     marginLeft: 23,
@@ -70,8 +69,5 @@ export const styles = StyleSheet.create({
     height: 56,
     justifyContent: 'center',
   },
-  menubar:{
-    width: '100%',
-    marginTop: '50%'
-  }
+  
 });

@@ -9,6 +9,7 @@ export const styles = StyleSheet.create({
     backgroundColor: theme.colors.secondary30,
     flexDirection: 'row',
     alignItems: 'center',
+    marginTop: 30
   },
   title:{
     flex: 1,

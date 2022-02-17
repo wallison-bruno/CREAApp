@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { View, Text, ScrollView } from 'react-native';
+import { View, Text, ScrollView, StatusBar } from 'react-native';
 
 import { HeaderBar } from '../../components/HeaderBar';
 
@@ -32,6 +32,12 @@ export function AcessoPublico(){
   return (
       
     <View style={styles.container}>
+
+        <StatusBar
+            barStyle='light-content'
+            backgroundColor='black' 
+            translucent
+        />
 
         <HeaderBar title='Acesso Público'/>
 

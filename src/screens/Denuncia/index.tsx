@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, TextInput } from 'react-native';
+import { View, Text, TextInput, StatusBar } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
@@ -21,7 +21,13 @@ import Alert from '../../assets/alerttwo.png'
 export function Denuncia(){
   return (
     <ScrollView showsVerticalScrollIndicator={false}>
-       <View style={styles.container}>     
+       <View style={styles.container}>  
+
+        <StatusBar
+              barStyle='light-content'
+              backgroundColor='black' 
+              translucent
+        />   
         
         <HeaderBar title='Denúncia'/>
 
