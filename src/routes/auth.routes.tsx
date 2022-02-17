@@ -16,27 +16,26 @@ export function AuthRoutes(){
                 headerTitleAlign: 'center',
                 headerShown: false
             }}>
-            
                 <Screen 
                     name='AreaRestrita'
                     component={AreaRestrita}
                 />
-            <Screen 
-                name='Denuncia'
-                component={Denuncia}
-            />
-            <Screen 
-                name='Login'
-                component={Login}
-            />
-            <Screen 
-                name='AcessoPublico'
-                component={AcessoPublico}
-            />
-            <Screen 
-                name='Consultas'
-                component={Consultas}
-            />   
+                <Screen 
+                    name='Consultas'
+                    component={Consultas}
+                />   
+                <Screen 
+                    name='AcessoPublico'
+                    component={AcessoPublico}
+                />
+                <Screen 
+                    name='Denuncia'
+                    component={Denuncia}
+                />
+                <Screen 
+                    name='Login'
+                    component={Login}
+                />
         </Navigator>
   );
 }

@@ -11,6 +11,11 @@ type Props = RectButtonProps & {
     fontFamily: string;
     iconLeft: any;
     iconRight: any;
+    borderBottomWidth: number;
+    paddingLeft: number;
+    marginRight: number;
+    marginLeft: number;
+    marginLeftTitle: number;
 }
 
 export function ButtonIcon({
@@ -19,7 +24,12 @@ export function ButtonIcon({
         fontSize, 
         fontFamily, 
         iconLeft, 
-        iconRight, 
+        iconRight,
+        borderBottomWidth,
+        paddingLeft,
+        marginRight,
+        marginLeft,
+        marginLeftTitle,
         ...rest
     }: Props){
   return (
@@ -27,15 +37,16 @@ export function ButtonIcon({
         style={styles.container}
         {...rest} 
     >         
-            <View style={styles.content}>
-
+            <View style={[styles.content, {borderBottomWidth: borderBottomWidth, borderBottomColor: '#DCDDE0'}]}>
+                
               <View style={styles.viewIconOne}>
-                <Image style={[styles.iconOne]} source={iconLeft}/>
+                <Image style={[styles.iconLeft, {marginRight: marginRight }]} source={iconLeft}/>
               </View>
 
-                  <View style={styles.viewTitle}>
+                  <View style={[styles.viewTitle, {marginLeft: marginLeftTitle}]}>
                     <Text style={[
-                        styles.title, 
+                        styles.title,
+                        {paddingLeft: paddingLeft}, 
                         {color: color}, 
                         {fontSize: fontSize},
                         {fontFamily: fontFamily}
@@ -43,7 +54,7 @@ export function ButtonIcon({
                   </View>
 
                 <View style={styles.ViewIconTwo}>
-                  <Image style={[styles.iconTwo]} source={iconRight} />
+                  <Image style={[styles.iconRight, {marginLeft: marginLeft}]} source={iconRight}/>
                 </View>
 
             </View>

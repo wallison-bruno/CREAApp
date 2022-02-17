@@ -6,10 +6,18 @@ import { Avatar } from '../../components/Avatar';
 
 import { styles } from './styles';
 
+import { ButtonServices } from '../../components/ButtonServices';
+import { ButtonIcon } from '../../components/ButtonIcon';
+import { theme } from '../../global/theme';
+
 import AvatarPng from '../../assets/avatar.png';
 import Search from '../../assets/search.png';
 import MicRed from '../../assets/micred.png';
-import { ButtonServices } from '../../components/ButtonServices';
+import Interrogation from '../../assets/interrogation.png';
+import Message from '../../assets/message.png';
+import Cardette from '../../assets/cardette.png';
+import RightArrowGray from '../../assets/rightarrowgray.png'
+import { MenuBar } from '../../components/MenuBar';
 
 
 export function AreaRestrita(){
@@ -45,11 +53,65 @@ export function AreaRestrita(){
               </View>        
           </View>
 
-          <View style={styles.services}>
+          <View>
             <ButtonServices />
           </View>
 
-          
+          <View style={styles.viewPlus}>
+            <Text style={styles.titlePlus}>
+                Mais
+            </Text>
+
+            <ButtonIcon 
+                style={styles.button} 
+                color= {theme.colors.darkgray} 
+                title="ART Online"
+                fontSize={12}
+                fontFamily={theme.fonts.SemiBold600}
+                iconLeft={Interrogation}
+                iconRight={RightArrowGray}
+                borderBottomWidth={1}
+                marginRight={160}
+                marginLeft={150}
+                paddingLeft={0}
+                marginLeftTitle={-70}
+            />
+
+            <ButtonIcon 
+                style={styles.button} 
+                color= {theme.colors.darkgray} 
+                title="Fale com a gente"
+                fontSize={12}
+                fontFamily={theme.fonts.SemiBold600}
+                iconLeft={Message}
+                iconRight={RightArrowGray}
+                borderBottomWidth={1}
+                marginRight={160}
+                marginLeft={150}
+                paddingLeft={0}
+                marginLeftTitle={-70}
+            />
+
+            <ButtonIcon 
+                style={styles.button} 
+                color= {theme.colors.darkgray} 
+                title="Sobre o CREA"
+                fontSize={12}
+                fontFamily={theme.fonts.SemiBold600}
+                iconLeft={Cardette}
+                iconRight={RightArrowGray}
+                borderBottomWidth={1}
+                marginRight={160}
+                marginLeft={150}
+                paddingLeft={0}
+                marginLeftTitle={-70}
+            />
+          </View>
+
+            <View style={styles.menubar}>
+              <MenuBar/>
+            </View>
+            
 
         </View>
     </View>

@@ -6,7 +6,6 @@ export const styles = StyleSheet.create({
     backgroundColor: theme.colors.highlight
   },
   content:{
-    justifyContent: 'center',
     alignItems: 'center'
   },
   viewInput: {
@@ -55,7 +54,24 @@ export const styles = StyleSheet.create({
   },
   services:{
     
+  },
+  viewPlus:{
+    alignSelf: 'flex-start',
+    marginLeft: 23,
+    marginTop: 32 
+  },
+  titlePlus:{
+    fontFamily: theme.fonts.Bold700,
+    fontSize: 12,
+    color: theme.colors.darkgray,
+  },
+  button:{
+    width:346,
+    height: 56,
+    justifyContent: 'center',
+  },
+  menubar:{
+    width: '100%',
+    marginTop: '50%'
   }
- 
-
 });

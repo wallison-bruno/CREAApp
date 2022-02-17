@@ -5,18 +5,21 @@ export const styles = StyleSheet.create({
     width: '100%',
     height:'100%',
     borderRadius: 4,
-    justifyContent: 'center'
+    justifyContent: 'center',
+    
   },
   content:{
     flexDirection: 'row',
-    justifyContent: 'center',   
+    justifyContent: 'center', 
+    
   },
   viewTitle:{
     justifyContent: 'center',
-    width: 260,
+    width: 180,
+    
   },
   title:{
-    paddingLeft: 27
+    //
   },
   viewIconOne:{
     width: 30,
@@ -30,12 +33,10 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  iconOne:{
-    // marginLeft: 19,
-    // marginRight:27,    
+  iconLeft:{
+    // marginRight: 30   
   },
-  iconTwo:{
-    // marginTop: 4,
-    // marginLeft: 180,   
+  iconRight:{
+    // marginLeft: 40  
   }
 });

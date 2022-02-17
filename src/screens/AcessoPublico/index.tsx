@@ -84,6 +84,11 @@ export function AcessoPublico(){
                         fontFamily={theme.fonts.SemiBold600}
                         iconLeft={Alert}
                         iconRight={undefined}
+                        borderBottomWidth={0}
+                        marginRight={50}
+                        marginLeft={0}
+                        paddingLeft={0}
+                        marginLeftTitle={0}
                     />
                     <ButtonIcon 
                         style={styles.button} 
@@ -93,6 +98,11 @@ export function AcessoPublico(){
                         fontFamily={theme.fonts.SemiBold600}
                         iconLeft={Search}
                         iconRight={Arrow}
+                        borderBottomWidth={0}
+                        marginRight={50}
+                        marginLeft={70}
+                        paddingLeft={0}
+                        marginLeftTitle={0}
                     />
                     <ButtonIcon 
                         style={styles.button} 
@@ -102,6 +112,11 @@ export function AcessoPublico(){
                         fontFamily={theme.fonts.SemiBold600}
                         iconLeft={Statistic}
                         iconRight={Arrow}
+                        borderBottomWidth={0}
+                        marginRight={50}
+                        marginLeft={70}
+                        paddingLeft={0}
+                        marginLeftTitle={0}
                     />
                     <ButtonIcon 
                         style={styles.button} 
@@ -111,6 +126,11 @@ export function AcessoPublico(){
                         fontFamily={theme.fonts.SemiBold600}
                         iconLeft={Authenticate}
                         iconRight={Arrow}
+                        borderBottomWidth={0}
+                        marginRight={50}
+                        marginLeft={70}
+                        paddingLeft={0}
+                        marginLeftTitle={0}
                     />
                     <ButtonIcon 
                         style={styles.button} 
@@ -120,6 +140,11 @@ export function AcessoPublico(){
                         fontFamily={theme.fonts.SemiBold600}
                         iconLeft={Counselors}
                         iconRight={Arrow}
+                        borderBottomWidth={0}
+                        marginRight={50}
+                        marginLeft={70}
+                        paddingLeft={0}
+                        marginLeftTitle={0}
                     />
                     <ButtonIcon 
                         style={styles.button} 
@@ -129,6 +154,11 @@ export function AcessoPublico(){
                         fontFamily={theme.fonts.SemiBold600}
                         iconLeft={Entities}
                         iconRight={Arrow}
+                        borderBottomWidth={0}
+                        marginRight={50}
+                        marginLeft={70}
+                        paddingLeft={0}
+                        marginLeftTitle={0}
                     />
                     <ButtonIcon 
                         style={styles.button} 
@@ -138,6 +168,11 @@ export function AcessoPublico(){
                         fontFamily={theme.fonts.SemiBold600}
                         iconLeft={About}
                         iconRight={Arrow}
+                        borderBottomWidth={0}
+                        marginRight={50}
+                        marginLeft={70}
+                        paddingLeft={0}
+                        marginLeftTitle={0}
                     />
                     <ButtonIcon 
                         style={styles.button} 
@@ -147,6 +182,11 @@ export function AcessoPublico(){
                         fontFamily={theme.fonts.SemiBold600}
                         iconLeft={Links}
                         iconRight={Arrow}
+                        borderBottomWidth={0}
+                        marginRight={50}
+                        marginLeft={70}
+                        paddingLeft={0}
+                        marginLeftTitle={0}
                     />
                     <ButtonIcon 
                         style={styles.button} 
@@ -156,6 +196,11 @@ export function AcessoPublico(){
                         fontFamily={theme.fonts.SemiBold600}
                         iconLeft={Directors}
                         iconRight={Arrow}
+                        borderBottomWidth={0}
+                        marginRight={50}
+                        marginLeft={70}
+                        paddingLeft={0}
+                        marginLeftTitle={0}
                     />
             </View>            
         </ScrollView>        

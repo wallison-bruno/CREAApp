@@ -71,7 +71,7 @@ export const styles = StyleSheet.create({
     marginBottom: 16,
     elevation: 3,
     justifyContent: 'center',
-    paddingStart: 150,
+    
   },
   buttonAlert:{
     backgroundColor: theme.colors.alertred,
@@ -82,6 +82,6 @@ export const styles = StyleSheet.create({
     marginBottom: 48,
     elevation: 3,
     justifyContent: 'center',
-    paddingStart: 150,
+    
   },
 });

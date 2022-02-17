@@ -158,9 +158,14 @@ export function Denuncia(){
                   color= {theme.colors.milk} 
                   title="Adicionar fotos"
                   fontSize={14}
-                  fontFamily={theme.fonts.Medium500}
+                  fontFamily={theme.fonts.SemiBold600}
                   iconLeft={AddImage}
                   iconRight={null}
+                  borderBottomWidth={0}
+                  marginRight={-85}
+                  marginLeft={0}
+                  paddingLeft={45}
+                  marginLeftTitle={0}
                 />
 
           </View>    
@@ -172,6 +177,11 @@ export function Denuncia(){
                   fontFamily={theme.fonts.Bold700}
                   iconLeft={Alert}
                   iconRight={null}
+                  borderBottomWidth={0}
+                  marginRight={-95}
+                  marginLeft={0}
+                  paddingLeft={55}
+                  marginLeftTitle={0}
                 />      
     </View>
     </ScrollView>
