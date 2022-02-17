@@ -32,10 +32,10 @@ export function AreaRestrita(){
 
             <View style={styles.content}>
 
-              <Avatar 
+            <Avatar 
                 image={AvatarPng}
                 name={'Maria'}
-                idCrea={123456789}
+                idCrea={'12345789'}
             />
 
             <View style={styles.viewInput}> 

@@ -8,7 +8,7 @@ import Bell from '../../assets/bell.png';
 type Props ={ 
     image: any;
     name: string;
-    idCrea: number;
+    idCrea: string;
 }
 
 export function Avatar({image, name, idCrea, ...rest}: Props){

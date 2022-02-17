@@ -6,6 +6,7 @@ import { Consultas } from '../screens/Consultas';
 import { Denuncia } from '../screens/Denuncia';
 import { AreaRestrita } from '../screens/AreaRestrita';
 import { ForYou } from '../screens/ForYou';
+import { AreaRestritaPerfil } from '../screens/AreaRestritaPerfil';
 
 const { Navigator, Screen } = createStackNavigator();
 
@@ -17,6 +18,10 @@ export function AuthRoutes(){
                 headerTitleAlign: 'center',
                 headerShown: false
             }}>
+                <Screen 
+                    name='AreaRestritaPerfil'
+                    component={AreaRestritaPerfil}
+                />
                 <Screen 
                     name='ForYou'
                     component={ForYou}
@@ -40,7 +45,7 @@ export function AuthRoutes(){
                 <Screen 
                     name='Consultas'
                     component={Consultas}
-                />   
+                />
         </Navigator>
   );
 }
