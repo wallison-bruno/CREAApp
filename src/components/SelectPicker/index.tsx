@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { View, Text } from 'react-native';
 import { Picker, PickerProps } from '@react-native-picker/picker';
 
-import { categories } from '../../utils/categories';
 
 import { styles } from './styles';
 

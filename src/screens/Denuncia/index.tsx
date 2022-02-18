@@ -31,7 +31,7 @@ export function Denuncia(){
         
         <HeaderBar title='Denúncia'/>
 
-          <View style={styles.data}>
+          <View style={styles.field}>
           
             <View style={styles.viewTitleID}>
               <Text style={styles.titleID}>
@@ -61,7 +61,7 @@ export function Denuncia(){
               />    
           </View>
 
-          <View style={styles.data}>
+          <View style={styles.field}>
           
             <View style={styles.viewTitleID}>
               <Text style={styles.titleID}>
@@ -86,7 +86,7 @@ export function Denuncia(){
               />   
           </View> 
 
-          <View style={styles.data}>
+          <View style={styles.field}>
           
             <View style={styles.viewTitleID}>
               <Text style={styles.titleID}>
@@ -126,7 +126,7 @@ export function Denuncia(){
               />
           </View>
 
-              <View style={styles.data}>
+              <View style={styles.field}>
                 <View style={styles.viewTitleID}>
                     <Text style={styles.titleID}>
                       Descreva sua denúncia
@@ -152,7 +152,7 @@ export function Denuncia(){
               />
           </View> 
 
-          <View style={styles.data}>
+          <View style={styles.field}>
                 <View style={styles.viewTitleID}>
                     <Text style={styles.titleID}>
                       Imagens (opcional)

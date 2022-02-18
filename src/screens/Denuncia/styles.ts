@@ -6,7 +6,7 @@ export const styles = StyleSheet.create({
     backgroundColor: theme.colors.highlight,
     alignItems: 'center',
   },
-  data:{
+  field:{
     borderRadius: 4,
     width: 342,
     backgroundColor: theme.colors.milk,
