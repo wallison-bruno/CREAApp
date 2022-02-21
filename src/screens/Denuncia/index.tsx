@@ -119,6 +119,10 @@ export function Denuncia(){
                 name='Pesquise pela cidade'
                 iconLeft={SearchRed}
                 iconRight={Mic}
+                width={309}
+                height={48}
+                marginLeft={17}
+                marginRight={-20}
               />
               <InputText
                 title='UF:'

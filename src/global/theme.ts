@@ -7,9 +7,10 @@ export const theme = {
         secondary30: '#2942E1',
 
         highlight: '#F6F6F6',
+        darkgray: '#1C2030',
+        screengray: '#888A8C',
         highgray: '#B0B0B0',
         verylightgray: '#C7C7C7',
-        darkgray: '#1C2030',
         alertred: '#F11D1D',
         radiored: '#DB370C',
         milk: '#FFFFFF', 

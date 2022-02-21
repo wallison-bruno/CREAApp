@@ -15,33 +15,31 @@ export const styles = StyleSheet.create({
     fontFamily: theme.fonts.SemiBold600,
   },
   viewInput:{
-    width: 310,
-    height: 48,
     flexDirection: 'row',
     borderWidth: 1,
     borderRadius: 4,
     borderColor: theme.colors.verylightgray,
     alignItems: 'center',
-    marginBottom: 11, 
+    marginBottom: 11,
   },
   buttonLeft:{
     width: 30,
     height: 30,
-    alignItems: 'center',
+    alignItems: 'flex-start',
     justifyContent: 'center',
-    paddingLeft: 7,
+    paddingLeft: 16,
   },
   buttonRight:{
     width: 30,
     height: 30,
-    alignItems: 'center',
     justifyContent: 'center',
+    paddingRight: 10,
   },
   input:{
     width: 243,
     height: 48,
     fontFamily: theme.fonts.Medium500,
     fontSize: 14,
-    paddingLeft: 5
+    textAlign: 'left',
   },
 });

@@ -7,6 +7,11 @@ import { Denuncia } from '../screens/Denuncia';
 import { AreaRestrita } from '../screens/AreaRestrita';
 import { ForYou } from '../screens/ForYou';
 import { AreaRestritaPerfil } from '../screens/AreaRestritaPerfil';
+import { Financeiro } from '../screens/Financeiro';
+import { Anuidade } from '../screens/Anuidade';
+import { ServicosOnline } from '../screens/ServicosOnline';
+import { CQRs } from '../screens/CQRs';
+import { SeusProtocolos } from '../screens/SeusProtocolos';
 
 const { Navigator, Screen } = createStackNavigator();
 
@@ -19,6 +24,30 @@ export function AuthRoutes(){
                 headerShown: false
             }}>
                 <Screen 
+                    name='SeusProtocolos'
+                    component={SeusProtocolos}
+                />
+                <Screen 
+                    name='Denuncia'
+                    component={Denuncia}
+                />
+                <Screen 
+                    name='CQRs'
+                    component={CQRs}
+                />
+                <Screen 
+                    name='Anuidade'
+                    component={Anuidade}
+                />
+                <Screen 
+                    name='ServicosOnline'
+                    component={ServicosOnline}
+                />
+                <Screen 
+                    name='Financeiro'
+                    component={Financeiro}
+                />
+                <Screen 
                     name='AreaRestritaPerfil'
                     component={AreaRestritaPerfil}
                 />
@@ -29,10 +58,6 @@ export function AuthRoutes(){
                 <Screen 
                     name='AreaRestrita'
                     component={AreaRestrita}
-                />
-                <Screen 
-                    name='Denuncia'
-                    component={Denuncia}
                 />
                 <Screen 
                     name='Login'

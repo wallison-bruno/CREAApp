@@ -10,20 +10,24 @@ type Props = TextInputProps & {
   name: string;
   iconLeft: any;
   iconRight: any;
+  width: number;
+  height: number;
+  marginLeft: number;
+  marginRight: number;
 }
 
-export function InputTextIcon({title, name, iconLeft, iconRight, ...rest} : Props){
+export function InputTextIcon({title, name, iconLeft, iconRight, width, height, marginLeft, marginRight, ...rest} : Props){
   return (
-    <View style={styles.container}> 
+    <View style={styles.container} > 
         <Text style={styles.title}>
               {title}
         </Text>
-        <View style={styles.viewInput}>
+        <View style={[styles.viewInput, {width: width, height: height }]}>
           <RectButton style={styles.buttonLeft}>
               <Image source={iconLeft}/>
           </RectButton>
               <TextInput 
-                        style={styles.input}
+                        style={[styles.input, {marginLeft: marginLeft, marginRight: marginRight}]}
                         placeholder={name}
                         {...rest} 
               />
