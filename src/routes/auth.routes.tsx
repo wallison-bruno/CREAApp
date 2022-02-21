@@ -12,6 +12,11 @@ import { Anuidade } from '../screens/Anuidade';
 import { ServicosOnline } from '../screens/ServicosOnline';
 import { CQRs } from '../screens/CQRs';
 import { SeusProtocolos } from '../screens/SeusProtocolos';
+import { DetalhesProtocolo } from '../screens/DetalhesProtocolo';
+import { ARTOnline } from '../screens/ARTOnline';
+import { SuasARTs } from '../screens/SuasARTs';
+import { CriarART } from '../screens/CriarART';
+import { PlacaObra } from '../screens/PlacaObra';
 
 const { Navigator, Screen } = createStackNavigator();
 
@@ -23,6 +28,26 @@ export function AuthRoutes(){
                 headerTitleAlign: 'center',
                 headerShown: false
             }}>
+                <Screen 
+                    name='PlacaObra'
+                    component={PlacaObra}
+                />
+                <Screen 
+                    name='SuasARTs'
+                    component={SuasARTs}
+                />
+                <Screen 
+                    name='CriarART'
+                    component={CriarART}
+                />
+                <Screen 
+                    name='ARTOnline'
+                    component={ARTOnline}
+                />
+                <Screen 
+                    name='DetalhesProtocolo'
+                    component={DetalhesProtocolo}
+                />
                 <Screen 
                     name='SeusProtocolos'
                     component={SeusProtocolos}
