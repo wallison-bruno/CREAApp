@@ -33,6 +33,10 @@ export function AuthRoutes(){
                 headerShown: false
             }}>
                 <Screen 
+                    name='Login'
+                    component={Login}
+                />
+                <Screen 
                     name='DetalhesProtocolo'
                     component={DetalhesProtocolo}
                 />
@@ -103,10 +107,6 @@ export function AuthRoutes(){
                 <Screen 
                     name='AreaRestrita'
                     component={AreaRestrita}
-                />
-                <Screen 
-                    name='Login'
-                    component={Login}
                 />
                 <Screen 
                     name='AcessoPublico'
