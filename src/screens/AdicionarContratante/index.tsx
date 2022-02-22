@@ -14,14 +14,14 @@ import { styles } from './styles';
 import { theme } from '../../global/theme';
 
 import  Mic from '../../assets/mic.png';
-import SearchRed from '../../assets/searchred.png'
-import AddImage from '../../assets/addimage.png'
-import Alert from '../../assets/alerttwo.png'
+import SearchRed from '../../assets/searchred.png';
+import AddPlusPng from '../../assets/addplus.png';
+import { MenuBar } from '../../components/MenuBar';
 
-export function Denuncia(){
+export function AdicionarContratante(){
   return (
     <ScrollView showsVerticalScrollIndicator={false}>
-       <View style={styles.container}>  
+       <View style={styles.container} >  
 
         <StatusBar
               barStyle='light-content'
@@ -29,19 +29,27 @@ export function Denuncia(){
               translucent
         />   
         
-        <HeaderBar title='Denúncia'/>
+        <HeaderBar title='Adicionar Contratante'/>
+
+            <View style={styles.field}>
+              
+              <View style={styles.viewTitleID}>
+                <Text style={styles.titleID}>
+                  Tipo de Contratante
+                </Text>
+              </View>
+              
+                <Radio title1='Nacional' title2='Estrangeira'/>
+                
+            </View> 
 
           <View style={styles.field}>
           
             <View style={styles.viewTitleID}>
               <Text style={styles.titleID}>
-                  Sua identificação
+                  Dados Pessoais
               </Text>
-                <MaterialCommunityIcons
-                  name='information'
-                  size={16}
-                  color= {theme.colors.primary}
-              />
+
             </View>
               <InputText
                 title='CPF:'
@@ -51,21 +59,19 @@ export function Denuncia(){
                 title='Nome Completo:'
                 textAlign='left'
               />
+              <Text style={styles.sexo}>Sexo:</Text>
+              <Radio title1='Masculino' title2='Feminino'/>
               <InputText
                 title='E-mail:'
                 textAlign='left'
               />
-              <InputText
-                title='Telefone:'
-                textAlign='left'
-              />    
           </View>
 
           <View style={styles.field}>
           
             <View style={styles.viewTitleID}>
               <Text style={styles.titleID}>
-                  Dados do Denunciado
+                  Endereço
               </Text>
                 <MaterialCommunityIcons
                   name='information'
@@ -77,13 +83,27 @@ export function Denuncia(){
               <Radio title1='Profissional' title2='Empresa'/>
             
               <InputText
-                title='Nome:'
+                title='CEP:'
                 textAlign='left'
               />
+              <SelectPicker title='Tipo de endereço'/>
+              <SelectPicker title='Tipo de logradouro'/>
               <InputText
-                title='CPF:'
+                title='Logradouro:'
                 textAlign='left'
-              />   
+              />  
+              <InputText
+                title='Complemento:'
+                textAlign='left'
+              /> 
+              <InputText
+                title='Número:'
+                textAlign='left'
+              /> 
+              <InputText
+                title='Bairro:'
+                textAlign='left'
+              /> 
           </View> 
 
           <View style={styles.field}>
@@ -128,72 +148,31 @@ export function Denuncia(){
                 title='UF:'
                 textAlign='left'
               />
+              <InputText
+                title='Telefone:'
+                textAlign='left'
+              />
           </View>
-
-              <View style={styles.field}>
-                <View style={styles.viewTitleID}>
-                    <Text style={styles.titleID}>
-                      Descreva sua denúncia
-                    </Text> 
-                </View>
-              <SelectPicker title='Tipo de denúncia:'/>
-
-              <Text style={styles.titleDescribe}>
-                  Fato denunciado:
-              </Text>
-              <TextInput
-              //Ajeitar o placeholder
-              style={styles.inputDescribe} 
-              placeholder={`Descreva sua denúncia com o máximo ${'\n'} de detalhes possível.`}
-              />
-              <Text style={styles.titleObservation}>
-                  Observação:
-              </Text>
-              <TextInput
-              //Ajeitar o placeholder
-              style={styles.inputObservation} 
-              placeholder={`Observação`}
-              />
-          </View> 
-
-          <View style={styles.field}>
-                <View style={styles.viewTitleID}>
-                    <Text style={styles.titleID}>
-                      Imagens (opcional)
-                    </Text> 
-                </View>
 
                 <ButtonIcon
                   style={styles.buttonImage} 
                   color= {theme.colors.milk} 
-                  title="Adicionar fotos"
+                  title="Cadastrar"
                   fontSize={14}
                   fontFamily={theme.fonts.SemiBold600}
-                  iconLeft={AddImage}
+                  iconLeft={AddPlusPng}
                   iconRight={null}
                   borderBottomWidth={0}
                   marginRight={-85}
                   marginLeft={0}
                   paddingLeft={45}
                   marginLeftTitle={0}
-                />
-          </View>    
-                <ButtonIcon
-                  style={styles.buttonAlert} 
-                  color= {theme.colors.milk} 
-                  title="DENUNCIAR"
-                  fontSize={14}
-                  fontFamily={theme.fonts.Bold700}
-                  iconLeft={Alert}
-                  iconRight={null}
-                  borderBottomWidth={0}
-                  marginRight={-95}
-                  marginLeft={0}
-                  paddingLeft={55}
-                  marginLeftTitle={0}
-                />      
+                />   
     </View>
+      
+      <MenuBar />
+
     </ScrollView>
-   
+
   );
 }

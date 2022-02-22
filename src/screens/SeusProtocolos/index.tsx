@@ -36,9 +36,23 @@ export function SeusProtocolos(){
             />
         </View>
         
-        <ScrollView style={styles.content}>
+        <ScrollView style={styles.content} showsVerticalScrollIndicator={false} >
                 {/* FALTANDO OS CONTEÚDOS */}
-                <Text>Está faltando o conteudo</Text>
+                <View style={styles.conteudo}>
+                  <Text>Aqui é conteudo do component de detalhes de certificação</Text>
+                </View>
+                <View style={styles.conteudo}>
+                  <Text>Aqui é conteudo do component de detalhes de certificação</Text>
+                </View>
+                <View style={styles.conteudo}>
+                  <Text>Aqui é conteudo do component de detalhes de certificação</Text>
+                </View>
+                <View style={styles.conteudo}>
+                  <Text>Aqui é conteudo do component de detalhes de certificação</Text>
+                </View>
+                <View style={styles.conteudo}>
+                  <Text>Aqui é conteudo do component de detalhes de certificação</Text>
+                </View>
         </ScrollView>
 
         <MenuBar /> 

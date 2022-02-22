@@ -26,7 +26,7 @@ export function SelectPicker({title} : Props) {
        
         }>       
           <Picker.Item label='Local' value='Local' />
-          <Picker.Item label='Outros' value='Outros' />
+          <Picker.Item label='Residencial' value='Residencial' />
           <Picker.Item label='Online' value='Online' />       
       </Picker>
       </View>

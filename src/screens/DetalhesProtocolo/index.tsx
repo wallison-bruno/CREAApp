@@ -23,7 +23,15 @@ export function DetalhesProtocolo(){
        
         <ScrollView style={styles.content}>
                 {/* FALTANDO OS CONTEÚDOS */}
-                <Text>Conteúdo</Text>
+                <View style={styles.conteudo}>
+                  <Text>Aqui é conteudo do component de detalhes de certificação</Text>
+                </View>
+                <View style={styles.conteudo}>
+                  <Text>Aqui é conteudo do component de detalhes de certificação</Text>
+                </View>
+                <View style={styles.conteudo}>
+                  <Text>Aqui é conteudo do component de detalhes de certificação</Text>
+                </View>
         </ScrollView>
 
         <View style={styles.viewButton}>

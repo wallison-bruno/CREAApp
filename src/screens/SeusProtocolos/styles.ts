@@ -28,5 +28,16 @@ export const styles = StyleSheet.create({
   },
   input:{
       alignSelf: 'center',  
+  },
+  conteudo:{
+    width: 346,
+    height: 128,
+    backgroundColor: theme.colors.milk,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginTop: 5,
+    marginBottom: 5,
+    alignSelf: 'center',
+    borderRadius: 4
   }
 });

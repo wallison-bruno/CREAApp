@@ -17,6 +17,10 @@ import { ARTOnline } from '../screens/ARTOnline';
 import { SuasARTs } from '../screens/SuasARTs';
 import { CriarART } from '../screens/CriarART';
 import { PlacaObra } from '../screens/PlacaObra';
+import { SuasCATs } from '../screens/SuasCATs';
+import { DetalhesCertidao } from '../screens/DetalhesCertidão';
+import { SeusContratantes } from '../screens/SeusContratantes';
+import { AdicionarContratante } from '../screens/AdicionarContratante';
 
 const { Navigator, Screen } = createStackNavigator();
 
@@ -28,6 +32,34 @@ export function AuthRoutes(){
                 headerTitleAlign: 'center',
                 headerShown: false
             }}>
+                <Screen 
+                    name='DetalhesProtocolo'
+                    component={DetalhesProtocolo}
+                />
+                <Screen 
+                    name='SeusProtocolos'
+                    component={SeusProtocolos}
+                />
+                <Screen 
+                    name='Denuncia'
+                    component={Denuncia}
+                />
+                <Screen 
+                    name='AdicionarContratante'
+                    component={AdicionarContratante}
+                />
+                <Screen 
+                    name='SeusContratantes'
+                    component={SeusContratantes}
+                />
+                <Screen 
+                    name='DetalhesCertidao'
+                    component={DetalhesCertidao}
+                />
+                <Screen 
+                    name='SuasCATs'
+                    component={SuasCATs}
+                />
                 <Screen 
                     name='PlacaObra'
                     component={PlacaObra}
@@ -43,18 +75,6 @@ export function AuthRoutes(){
                 <Screen 
                     name='ARTOnline'
                     component={ARTOnline}
-                />
-                <Screen 
-                    name='DetalhesProtocolo'
-                    component={DetalhesProtocolo}
-                />
-                <Screen 
-                    name='SeusProtocolos'
-                    component={SeusProtocolos}
-                />
-                <Screen 
-                    name='Denuncia'
-                    component={Denuncia}
                 />
                 <Screen 
                     name='CQRs'

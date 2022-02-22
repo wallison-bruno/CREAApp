@@ -6,10 +6,6 @@ export const styles = StyleSheet.create({
     backgroundColor: theme.colors.highlight,
     alignItems: 'center',
   },
-  content:{
-    backgroundColor: theme.colors.highlight,
-    alignItems: 'center',
-  },
   field:{
     borderRadius: 4,
     width: 342,
@@ -67,8 +63,8 @@ export const styles = StyleSheet.create({
     marginBottom: 12
   },
   buttonImage:{
-    backgroundColor: theme.colors.primary,
-    width:310,
+    backgroundColor: theme.colors.radiored,
+    width:346,
     height: 48,
     borderRadius: 4,
     marginTop: 10,
@@ -86,4 +82,9 @@ export const styles = StyleSheet.create({
     elevation: 3,
     justifyContent: 'center',    
   },
+  sexo:{
+    fontFamily: theme.fonts.SemiBold600,
+    fontSize: 10,
+    color: theme.colors.darkgray
+  }
 });
