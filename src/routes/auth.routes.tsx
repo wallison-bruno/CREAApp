@@ -21,6 +21,7 @@ import { SuasCATs } from '../screens/SuasCATs';
 import { DetalhesCertidao } from '../screens/DetalhesCertidão';
 import { SeusContratantes } from '../screens/SeusContratantes';
 import { AdicionarContratante } from '../screens/AdicionarContratante';
+import { TestePicker } from '../screens/TestePicker';
 
 const { Navigator, Screen } = createStackNavigator();
 
@@ -33,8 +34,20 @@ export function AuthRoutes(){
                 headerShown: false
             }}>
                 <Screen 
+                    name='Denuncia'
+                    component={Denuncia}
+                />
+                <Screen 
+                    name='AcessoPublico'
+                    component={AcessoPublico}
+                />
+                <Screen 
                     name='Login'
                     component={Login}
+                />
+                <Screen 
+                    name='TestePicker'
+                    component={TestePicker}
                 />
                 <Screen 
                     name='DetalhesProtocolo'
@@ -43,10 +56,6 @@ export function AuthRoutes(){
                 <Screen 
                     name='SeusProtocolos'
                     component={SeusProtocolos}
-                />
-                <Screen 
-                    name='Denuncia'
-                    component={Denuncia}
                 />
                 <Screen 
                     name='AdicionarContratante'
@@ -107,10 +116,6 @@ export function AuthRoutes(){
                 <Screen 
                     name='AreaRestrita'
                     component={AreaRestrita}
-                />
-                <Screen 
-                    name='AcessoPublico'
-                    component={AcessoPublico}
                 />
                 <Screen 
                     name='Consultas'

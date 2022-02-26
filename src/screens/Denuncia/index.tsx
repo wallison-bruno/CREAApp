@@ -18,6 +18,10 @@ import SearchRed from '../../assets/searchred.png'
 import AddImage from '../../assets/addimage.png'
 import Alert from '../../assets/alerttwo.png'
 
+import { tipoEndereco } from '../../utils/categories';
+import { tipoLogradouro } from '../../utils/categories';
+import { tipoDenuncia } from '../../utils/categories';
+
 export function Denuncia(){
   return (
     <ScrollView showsVerticalScrollIndicator={false}>
@@ -95,8 +99,8 @@ export function Denuncia(){
             </View>
 
               {/* VER OUTROS TIPOS DE PICKERS */}
-            <SelectPicker title='Tipo de endereço'/>
-            <SelectPicker title='Tipo de logradouro'/>
+            <SelectPicker title='Tipo de endereço' categorias={tipoEndereco}/>
+            <SelectPicker title='Tipo de logradouro' categorias={tipoLogradouro}/>
 
               <InputText
                 title='Logradouro::'
@@ -136,7 +140,7 @@ export function Denuncia(){
                       Descreva sua denúncia
                     </Text> 
                 </View>
-              <SelectPicker title='Tipo de denúncia:'/>
+              <SelectPicker title='Tipo de denúncia:' categorias={tipoDenuncia}/>
 
               <Text style={styles.titleDescribe}>
                   Fato denunciado:
