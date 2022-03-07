@@ -3,12 +3,14 @@ import { theme } from '../../global/theme';
 
 export const styles = StyleSheet.create({
   container: {
+    flex: 1,
     backgroundColor: theme.colors.highlight,
-    alignItems: 'center',
+    alignItems: 'center'
   },
   content:{
     backgroundColor: theme.colors.highlight,
     alignItems: 'center',
+    flex: 1
   },
   field:{
     borderRadius: 4,

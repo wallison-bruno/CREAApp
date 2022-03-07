@@ -7,14 +7,15 @@ import { styles } from './styles';
 
 type Props = PickerProps &{
   title: string;
+  categorias: any;
 }
 
-export function SelectPicker({title} : Props) {
+export function SelectPicker({title, categorias} : Props) {
 
   const [escolaridade, setEscolaridade] = useState('');
 
   return (
-    <View>
+    <View style={styles.container}>
       
       <Text style={styles.title}>{title}</Text>
       
@@ -24,10 +25,16 @@ export function SelectPicker({title} : Props) {
         selectedValue={escolaridade}
         onValueChange={(itemValue, itemIndex) => setEscolaridade(itemValue)
        
-        }>       
-          <Picker.Item label='Local' value='Local' />
-          <Picker.Item label='Residencial' value='Residencial' />
-          <Picker.Item label='Online' value='Online' />       
+        }> 
+        {
+          categorias.map(category => (
+            <Picker.Item 
+              key={category.id}
+              label={category.title}
+              value={category.label}
+            />
+          ))
+        }            
       </Picker>
       </View>
     </View>
