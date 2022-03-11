@@ -17,11 +17,12 @@ export function Login(){
   return (
     <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
 
-          <StatusBar
-            barStyle='light-content'
-            backgroundColor='transparent' 
-            translucent
-          />
+
+        <StatusBar
+          translucent={false}
+          barStyle={'dark-content'}
+          backgroundColor="transparent"
+        />
 
           <View style={styles.logo}>
               <Image 

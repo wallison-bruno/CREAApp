@@ -8,5 +8,12 @@ export const styles = StyleSheet.create({
     height: 10,
     borderRadius: 5,
     marginLeft: 3
+  },
+  containerBlack:{
+    backgroundColor: 'black',
+    width: 10,
+    height: 10,
+    borderRadius: 5,
+    marginLeft: 3
   }
 });

@@ -3,6 +3,7 @@ import { theme } from '../../global/theme';
 
 export const styles = StyleSheet.create({
   container: {
+    flex: 1,
     justifyContent: 'center',
     height: '100%',
   },
@@ -14,12 +15,14 @@ export const styles = StyleSheet.create({
     marginBottom: 8
   },
   content:{
+    
     marginLeft: 14,
     height: 270,
     minHeight: 130, 
   },
   newsCircle:{
     paddingBottom: 10,
+    flexDirection: 'row'
   },
   viewButton:{
     alignItems: 'center',

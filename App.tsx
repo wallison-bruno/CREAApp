@@ -1,4 +1,5 @@
 import React from 'react';
+import { StatusBar } from 'react-native';
 
 import { useFonts } from 'expo-font';
 
@@ -13,6 +14,7 @@ import AppLoading from 'expo-app-loading';
 import { Routes } from './src/routes';
 
 export default function App() {
+
   //o vetor vai retornar um valor boolean
   const [fontsLoaded] = useFonts({
       Montserrat_400Regular,
@@ -27,6 +29,8 @@ export default function App() {
   }
 
   return (
-        <Routes />
+
+    <Routes />
+
   );
 }

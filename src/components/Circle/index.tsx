@@ -4,9 +4,13 @@ import { View, Text } from 'react-native';
 
 import { styles } from './styles';
 
-export function Circle(){
+interface Props {
+  isMarket: boolean;
+}
+
+export function Circle({isMarket} : Props){
   return (
-    <View style={styles.container}>
+    <View style={isMarket ? styles.containerBlack : styles.container}>
         {/* aqui tem um circulo */}
     </View>
   );

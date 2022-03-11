@@ -8,7 +8,7 @@ import { styles } from './styles';
 
 type Props = RectButtonProps & {
     title: string;
-    image: any;
+    image: string;
 }
 
 export function NewsTitle({title, image, ...rest}: Props){
@@ -17,7 +17,7 @@ export function NewsTitle({title, image, ...rest}: Props){
         style={styles.container}
         {...rest} 
     >        
-      <Image style={styles.img} source={image}/>
+      <Image style={styles.img} source={{uri: image}}/>
       
       <View style={styles.titleBackground}>
         <Text style={styles.title}>{title}</Text>   

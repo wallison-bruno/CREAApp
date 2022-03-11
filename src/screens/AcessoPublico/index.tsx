@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
 
-import { View, Text, ScrollView, StatusBar } from 'react-native';
+import { View, Text, ScrollView, StatusBar, FlatList, ViewToken } from 'react-native';
 
 import { HeaderBar } from '../../components/HeaderBar';
 
@@ -26,18 +26,73 @@ import About from '../../assets/about.png'
 import Links from '../../assets/links.png'
 import Directors from '../../assets/directors.png'
 import Entities from '../../assets/entities.png'
+import { Circle } from '../../components/Circle';
+
+
+interface changeNewsProps {
+    viewableItems: ViewToken[];
+    changed: ViewToken[];
+}
+interface News {
+    id: string;
+    title: string;
+    image: string;
+}
 
 
 export function AcessoPublico(){
+   const [news, setNews] = useState([] as News[]);
+   const [newIndex, setNewIndex] = useState(0);
+    
+   const indexNew = useRef(
+       (info: changeNewsProps) => {console.log(info);
+        setNewIndex(info.viewableItems[0].index!)
+    }) 
+
+   const newsMoc = [
+       {
+        id: '1',
+        title: 'texto 01', 
+        image:'https://ichef.bbci.co.uk/news/640/cpsprodpb/133CB/production/_103759787_gettyimages-949493748.jpg'
+       },
+       {
+        id: '2',
+        title: 'texto 02', 
+        image:'https://ichef.bbci.co.uk/news/640/cpsprodpb/133CB/production/_103759787_gettyimages-949493748.jpg'
+       },
+       {
+        id: '3',
+        title: 'Lorem ipsum dolor sit amet, consecte adipiscing elit.', 
+        image:'https://ichef.bbci.co.uk/news/640/cpsprodpb/133CB/production/_103759787_gettyimages-949493748.jpg'
+       },
+       {
+        id: '4',
+        title: 'Lorem ipsum dolor sit amet, consecte adipiscing elit.', 
+        image:'https://ichef.bbci.co.uk/news/640/cpsprodpb/133CB/production/_103759787_gettyimages-949493748.jpg'
+       },
+       {
+       id: '5',
+       title: 'Lorem ipsum dolor sit amet, consecte adipiscing elit.', 
+       image:'https://ichef.bbci.co.uk/news/640/cpsprodpb/133CB/production/_103759787_gettyimages-949493748.jpg'
+      },
+      {
+        id: '6',
+        title: 'Lorem ipsum dolor sit amet, consecte adipiscing elit.', 
+        image:'https://ichef.bbci.co.uk/news/640/cpsprodpb/133CB/production/_103759787_gettyimages-949493748.jpg'
+       },
+      
+   ] as News[];
+
+
   return (
       
-    <View style={styles.container}>
+      <View style={styles.container}>
 
         <StatusBar
-            barStyle='light-content'
-            backgroundColor='black' 
-            translucent
-        />
+          translucent={true}
+          barStyle={'dark-content'}
+          backgroundColor="transparent"
+        />          
 
         <HeaderBar title='Acesso Público'/>
 
@@ -47,34 +102,29 @@ export function AcessoPublico(){
 
         {/* CABEI AQUI */}
         
-        <ScrollView 
+        <FlatList
+            style={styles.content}
+            data={newsMoc}
+            keyExtractor={item => item.id}
+            renderItem={({item}) => (
+                <NewsTitle 
+                title={item.title} 
+                image={item.image}
+                />
+            ) }
             horizontal
-            style={styles.content}  
-            showsHorizontalScrollIndicator={false}  
-            contentContainerStyle={{ paddingRight: 20}}
+            showsHorizontalScrollIndicator={false}
+            onViewableItemsChanged={indexNew.current}
         >
-            <NewsTitle 
-                title='Lorem ipsum dolor sit amet, consecte adipiscing elit.' 
-                image={News}
-            />
-            <NewsTitle 
-                title='Lorem ipsum dolor sit amet, consecte adipiscing elit.' 
-                image={NewsTwo}
-            />
-            <NewsTitle 
-                title='Lorem ipsum dolor sit amet, consecte adipiscing elit.' 
-                image={News}
-            />
-            <NewsTitle 
-                title='Lorem ipsum dolor sit amet, consecte adipiscing elit.' 
-                image={NewsTwo}
-            />
             
-
-        </ScrollView>    
+        </FlatList>    
         
         <View style={styles.newsCircle}>
-            <NewsBar />  
+            {
+                newsMoc.map((_,index) => (<Circle key={index} 
+                    isMarket={index === newIndex ? true : false}
+                />))
+            }
         </View>
 
         <ScrollView 

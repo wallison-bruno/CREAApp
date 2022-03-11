@@ -6,17 +6,31 @@ import { styles } from './styles';
 import iconNext from '../../assets/iconNext.png'
 import { Circle } from '../Circle';
 
-export function NewsBar(){
+interface Props {
+  length: number;
+}
+
+export function NewsBar({length = 1} : Props){
+  
+  function handleCircle(length: number) {
+      let circle = [ ];
+
+      for (let i = 0; i < length; i++) {
+          circle.push(
+            <Circle key={i}/>
+          )
+      }
+          return circle;
+  }
+
   return (
     <View style={styles.container}>   
     {/* Faltando os ícones de bolinhas que rola quando passa imagem */}
         <View style={styles.barPlus}>
             <View style={styles.circle}>
-                <Circle/>
-                <Circle/>
-                <Circle/>
-                <Circle/>
-                <Circle/>
+            {
+              handleCircle
+            }
             </View>
             <View style={styles.plus}>
                 <Text style={styles.titlePlus}>Ver mais</Text>
