@@ -41,6 +41,7 @@ export function AuthRoutes(){
                     name='Denuncia'
                     component={Denuncia}
                 />
+                
                 <Screen 
                     name='Login'
                     component={Login}
