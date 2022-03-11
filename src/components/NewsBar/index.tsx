@@ -10,6 +10,8 @@ interface Props {
   length: number;
 }
 
+//SERA REITERADO 
+
 export function NewsBar({length = 1} : Props){
   
   function handleCircle(length: number) {
