@@ -1,19 +1,18 @@
 import React, { useState, useRef } from 'react';
 
-import { View, Text, ScrollView, StatusBar, FlatList, ViewToken } from 'react-native';
+import { View, Text, ScrollView, StatusBar, FlatList, ViewToken, Image } from 'react-native';
 
 import { HeaderBar } from '../../components/HeaderBar';
 
 import { styles } from './styles';
 
 import { NewsTitle } from '../../components/NewsTitle';
-import { NewsBar } from '../../components/NewsBar';
 import { theme } from '../../global/theme';
 import { ButtonIcon } from '../../components/ButtonIcon';
 
 //Imagens News
 import News from '../../assets/news.png'
-import NewsTwo from '../../assets/newstwo.png'
+import iconNext from '../../assets/iconNext.png'
 
 //Imagens dos botões
 import Alert from '../../assets/alert.png'
@@ -45,7 +44,8 @@ export function AcessoPublico(){
    const [newIndex, setNewIndex] = useState(0);
     
    const indexNew = useRef(
-       (info: changeNewsProps) => {console.log(info);
+       (info: changeNewsProps) => {
+        console.log(info);
         setNewIndex(info.viewableItems[0].index!)
     }) 
 
@@ -115,17 +115,26 @@ export function AcessoPublico(){
             horizontal
             showsHorizontalScrollIndicator={false}
             onViewableItemsChanged={indexNew.current}
-        >
-            
-        </FlatList>    
+        >           
+        </FlatList> 
+
+        <View style={styles.newsBar}>   
         
-        <View style={styles.newsCircle}>
-            {
-                newsMoc.map((_,index) => (<Circle key={index} 
-                    isMarket={index === newIndex ? true : false}
-                />))
-            }
+            <View style={styles.newsCircle}>
+                {
+                    newsMoc.map((_,index) => (<Circle key={index} 
+                        isMarket={index === newIndex ? true : false}
+                    />))
+                }
+            </View>
+
+            <View style={styles.viewPlus}>
+                <Text style={styles.titlePlus}>Ver mais</Text>
+                <Image style={styles.imgPlus} source={iconNext} />
+            </View>
+            
         </View>
+        
 
         <ScrollView 
         contentContainerStyle={{ alignItems: 'center' }}
