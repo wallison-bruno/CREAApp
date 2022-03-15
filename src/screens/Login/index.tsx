@@ -1,22 +1,34 @@
 import React from 'react';
-import { View, Image, ScrollView, Text, StatusBar} from 'react-native';
+import { 
+  View, 
+  Image, 
+  ScrollView, 
+  Text, 
+  StatusBar
+} from 'react-native';
 
-import { Input } from '../../components/Input';
+
+import { useForm } from 'react-hook-form';
+import { useAuth } from '../../hooks/auth';
+
 import { Check } from '../../components/CheckBox';
+import { ButtonEnter } from '../../components/ButtonEnter';
+import { InputForm } from '../../components/Form/InputForm';
 
+import { theme } from '../../global/theme';
 import { styles } from './styles';
 
 import Logo from '../../assets/logo.png'
 import Public from '../../assets/public.png'
-import { ButtonEnter } from '../../components/ButtonEnter';
-import { theme } from '../../global/theme';
-
 
 
 export function Login(){
+
+  const {control, handleSubmit} = useForm();
+  const { isLoadingSingNin, signIn, signOut } = useAuth();
+    
   return (
     <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
-
 
         <StatusBar
           translucent={false}
@@ -31,8 +43,19 @@ export function Login(){
           </View>
           
           <View style={styles.content} >
-              <Input title='CPF'/>
-              <Input title='Senha'/>
+              <InputForm 
+                name='email'
+                control={control}
+                placeholder='E-mail'
+                placeholderTextColor={theme.colors.highgray}
+              />
+              <InputForm 
+                name='password'
+                control={control}
+                placeholder='Password'
+                placeholderTextColor={theme.colors.highgray}
+              />
+
               <Check />
           </View> 
 
@@ -43,8 +66,17 @@ export function Login(){
             <Text style={styles.linkRecover}>Clique Aqui</Text>
           </View>
 
-          <View style={styles.viewButton}>
-            <ButtonEnter style={styles.buttonOne} title='Entrar' color={theme.colors.primary} fontSize={15} fontFamily={theme.fonts.Bold700}/>
+          <View style={styles.enter}>
+
+            <ButtonEnter 
+              style={styles.buttonEnter} 
+              title='Entrar'
+              colors={theme.colors.milk}
+              isLoading={!isLoadingSingNin}
+              onPress={handleSubmit(signOut)}
+   
+            />
+
           </View>
           
           {/* Aqui é um link */}

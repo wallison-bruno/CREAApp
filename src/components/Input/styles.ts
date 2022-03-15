@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { RFValue } from 'react-native-responsive-fontsize';
 import { theme } from '../../global/theme';
 
 export const styles = StyleSheet.create({
@@ -6,16 +7,23 @@ export const styles = StyleSheet.create({
     marginBottom: 16,
   },
   input:{
-    width: 302,
-    height: 56,
-    borderWidth: 2,
+    width: '100%',
+
+    paddingVertical: RFValue(16),
+    paddingHorizontal: RFValue(18),
+
+    marginBottom: RFValue(16), 
+
+    borderWidth: 1,
     borderRadius: 4,
     borderColor: theme.colors.secondary10,
+  
     color: theme.colors.highgray,
     backgroundColor: theme.colors.primary,
+
     fontFamily: theme.fonts.Regular400,
-    fontSize: 16,
-    paddingLeft: 16,
+    fontSize: RFValue(14),
+
     elevation: 3,
   }
 });

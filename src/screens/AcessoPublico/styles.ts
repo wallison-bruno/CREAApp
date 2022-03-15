@@ -54,7 +54,7 @@ export const styles = StyleSheet.create({
   },
 
   buttonAlert:{
-    backgroundColor: theme.colors.alertred,
+    backgroundColor: theme.colors.attention,
     width:340,
     height: 56,
     borderRadius: 4,

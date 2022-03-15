@@ -11,8 +11,10 @@ export const theme = {
         screengray: '#888A8C',
         highgray: '#B0B0B0',
         verylightgray: '#C7C7C7',
-        alertred: '#F11D1D',
-        radiored: '#DB370C',
+
+        attention: '#F11D1D',
+        attention_orange: '#DB370C',
+        
         milk: '#FFFFFF', 
         
 

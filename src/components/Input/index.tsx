@@ -4,20 +4,13 @@ import { theme } from '../../global/theme';
 
 import { styles } from './styles';
 
-type Props = TextInputProps & {
-    title: string;
-}
+type Props = TextInputProps;
 
-export function Input({title, ...rest} : Props){
+export function Input({...rest} : Props){
   return (
-        <View style={styles.container}>
             <TextInput 
                 style={styles.input}
-                placeholder={title}
-                placeholderTextColor={theme.colors.highgray}
-                selectionColor={theme.colors.milk}
                 {...rest}
             />
-        </View>
   );
 }

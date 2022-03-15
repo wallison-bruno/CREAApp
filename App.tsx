@@ -12,6 +12,7 @@ import {
 import AppLoading from 'expo-app-loading';
 
 import { Routes } from './src/routes';
+import { AuthProvider } from './src/hooks/auth';
 
 export default function App() {
 
@@ -29,8 +30,10 @@ export default function App() {
   }
 
   return (
+    <AuthProvider>
+      <Routes />
 
-    <Routes />
+    </AuthProvider>
 
   );
 }

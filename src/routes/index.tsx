@@ -1,15 +1,21 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import { StatusBar } from 'react-native';
+
+import { useAuth } from '../hooks/auth';
+import { Login } from '../screens/Login';
 
 
 import { AuthRoutes } from './auth.routes'; 
 
 export function Routes(){
-  return (
-    <NavigationContainer>
+  const {token} = useAuth();
+  console.log(token)
 
-         <AuthRoutes />   
+  return (  
+    <NavigationContainer>
+      {
+        token === ('' || undefined) ? <Login /> : <AuthRoutes /> 
+      }
     </NavigationContainer>
   );
 }

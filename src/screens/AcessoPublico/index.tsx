@@ -45,7 +45,7 @@ export function AcessoPublico(){
     
    const indexNew = useRef(
        (info: changeNewsProps) => {
-        console.log(info);
+        // console.log(info);
         setNewIndex(info.viewableItems[0].index!)
     }) 
 

@@ -33,6 +33,10 @@ export function AuthRoutes(){
                 headerTitleAlign: 'center',
                 headerShown: false
             }}>
+                {/* <Screen 
+                    name='Login'
+                    component={Login}
+                /> */}
                 <Screen 
                     name='AcessoPublico'
                     component={AcessoPublico}
@@ -42,10 +46,6 @@ export function AuthRoutes(){
                     component={Denuncia}
                 />
                 
-                <Screen 
-                    name='Login'
-                    component={Login}
-                />
                 <Screen 
                     name='TestePicker'
                     component={TestePicker}
